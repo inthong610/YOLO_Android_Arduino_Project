@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.example.jungsoo.yoloandroidproject"
+        minSdkVersion 23 // 최소 sdk
+        targetSdkVersion 26 // target sdk
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.google.firebase:firebase-core:16.0.1' // firebase sdk 위해 추가
+    implementation 'com.google.firebase:firebase-messaging:17.1.0' // firebase 메세징 세팅 위해 추가(firebase에서 메세지 받으려고. 안드로이드에서도 보낼 수 있음.)
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+
+
+
+
+}
+
+apply plugin: 'com.google.gms.google-services' // firebase sdk 위해 추가

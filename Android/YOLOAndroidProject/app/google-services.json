@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "962581114182",
+    "firebase_url": "https://yoloproject2018-c9c78.firebaseio.com",
+    "project_id": "yoloproject2018-c9c78",
+    "storage_bucket": "yoloproject2018-c9c78.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962581114182:android:01d2423a9fdabe09",
+        "android_client_info": {
+          "package_name": "com.example.jungsoo.yoloandroidproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962581114182-rk1cm4neqdruikv4sif7j1uohle3g18s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0_cF_bDajRINL3wCuhccnAEbauLmXiBs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

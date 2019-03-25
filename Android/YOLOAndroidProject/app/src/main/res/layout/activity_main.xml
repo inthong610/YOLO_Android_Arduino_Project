@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- xml에서 변수명은 모두 소문자! 대문자는 오류남!! -->
+
+    <!-- LinearLayout은 한줄 차지 -->
+    <!-- Spinner는 웹의 select box와 같음. -->
+    <!-- layout_weight은 LinearLayout에서 차지하는 비중.-->
+    <!-- android:orientation="horizontal"는 LinearLayout의 자식이 차지하는 방향을 가르김. horizontal이 default -->
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <!-- @+는 resource(어떤 값)에 저장해라. id에 /뒤의 것을 할당 -->
+        <!-- Spinner 밑줄과 텍스트 컬러와 배경색 바꾸기 https://stackoverflow.com/questions/9476665/how-to-change-spinner-text-size-and-text-color 여기서 style로 바꾸는거 -->
+
+        <Spinner
+
+            android:id="@+id/camera_selectbox"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:theme="@style/SpinnerTheme"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:popupBackground="@color/colorPrimaryDark">
+
+        </Spinner>
+
+        <Spinner
+
+            android:id="@+id/wildlife_selectbox"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:theme="@style/SpinnerTheme"
+
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:popupBackground="@color/colorPrimaryDark">
+
+        </Spinner>
+
+        <Spinner
+
+            android:id="@+id/date_selectbox"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:theme="@style/SpinnerTheme"
+
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:popupBackground="@color/colorPrimaryDark">
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <!-- singleChoice는 하나만 눌림. -->
+
+    <ListView
+
+        android:id="@+id/mainactivity_listview"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="match_parent"
+        android:dividerHeight="1.5dp"
+        android:choiceMode="singleChoice"
+        android:paddingTop="10dp"
+
+        >
+
+    </ListView>
+
+</android.support.constraint.ConstraintLayout>
+

@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- 안드로이드에서 요청 보낼 서버 주소-->
+
+    <string name="url">http://172.20.10.2:8080</string>
+
+    <string name="app_name">잡았다요놈!</string>
+
+    <!-- Spinner인 경우 개발 순서 : string-array name
+         -> res폴더의 layout폴더의 activity_main.xml에 Spinner요소에 id 추가
+         -> java 폴더의 MainActivity에 adapter 연결
+    -->
+
+    <string-array name="camera_name"> <!-- Spinner(select box) -->
+
+        <item>모든 카메라</item>
+        <item>컬러</item>
+        <item>적외선</item>
+
+    </string-array>
+
+    <string-array name="wildlife_name"> <!-- Spinner(select box) -->
+
+        <item>모든 동물</item>
+        <item>멧돼지</item>
+        <item>고라니</item>
+        <item>곰</item>
+
+    </string-array>
+
+    <string-array name="date_name">
+
+        <item>모든 날짜</item>
+        <item>2018-09-19</item>
+        <item>2018-09-22</item>
+        <item>2018-09-24</item>
+        <item>2018-09-27</item>
+        <item>2018-09-30</item>
+        <item>2018-10-08</item>
+        <item>2018-10-09</item>
+
+
+    </string-array>
+
+</resources>

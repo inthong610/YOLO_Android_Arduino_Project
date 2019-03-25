@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 아이템에 들어갈 레이아웃이라 태그 이름 LinearLayout으로 바꿈 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+
+    <!-- 이미지의 layout_width를 0dp로 한 이유는 안드로이드에서 자동으로 비율에 맞춰 weight를 지정하게 하려고 -->
+    <!-- layout_gravity에서 center은 vertical horizontal 모두 center로 -->
+    <!-- adjustViewBounts는 사진 크기를 ImageView 크기에 맞게 맞춘다 -->
+    <!-- layout_weigth은 부모의 layout에서 1:3:2로 함 -->
+    <!-- pddingRight은 오른쪽에 패딩 넣기 -->
+
+    <ImageView
+
+        android:id="@+id/icon_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:layout_weight="1"
+        android:paddingRight="10dp"
+
+        />
+
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+
+        >
+        <TextView
+
+            android:id="@+id/time_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+        <TextView
+
+            android:id="@+id/notify_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+        <TextView
+
+            android:id="@+id/camera_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <TextView
+
+            android:id="@+id/address_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+    </LinearLayout>
+
+    <ImageView
+
+        android:id="@+id/listview_item_image"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="false"
+
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+Enter Image Path: data/bear-test/TB_000.jpg: Predicted in 0.101639 seconds.
+Bear: 94%

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#4aad54</color> // 기본 : 3F51B5
+    <color name="colorPrimaryDark">#3b8943</color> // 기본 : 303F9F
+    <color name="colorAccent">#FF4081</color>
+    <color name="my_spinner_text_color">#FFFFFF</color>
+
+</resources>

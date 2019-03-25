@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <!-- 아이콘+멧돼지 출현 감지 부분 -->
+        <!-- weightSum을 4로 두면 4등분 그중에 1:1로 2개 할당 -->
+
+        <LinearLayout
+
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="20dp"
+
+            >
+
+            <ImageView
+
+                android:id="@+id/detail_icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_weight="1"
+                android:paddingRight="10dp"
+
+                />
+
+            <TextView
+
+                android:id="@+id/detail_kind"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                />
+
+        </LinearLayout>
+
+        <!-- #D3D3D3은 light gray -->
+
+        <ImageView
+
+            android:id="@+id/detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:background="#D3D3D3"
+
+            />
+
+        <TextView
+
+            android:id="@+id/detail_time"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:background="#D3D3D3"
+
+            />
+
+        <TextView
+
+            android:id="@+id/detail_camera"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="#D3D3D3"
+
+            />
+
+        <TextView
+
+            android:id="@+id/detail_address"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:background="#D3D3D3"
+
+            />
+
+    <!-- #FF0000은 RED -->
+
+        <TextView
+
+            android:text="해당 지역에 경고 음성 알림을\n송출하시겠습니까?"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+
+            />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+            >
+
+            <Button
+
+                android:id="@+id/cancel_button"
+                android:text="Cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+
+                />
+
+    <!--backgroundTint로 버튼 색 상단바(상세보기)랑 같게 바꿈. 그냥 background로 하면 버튼 꺠짐 -->
+
+            <Button
+
+                android:id="@+id/ok_button"
+                android:text="OK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
