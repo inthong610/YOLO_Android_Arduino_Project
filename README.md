@@ -15,9 +15,8 @@
 
 ## b. 시연 영상
 
-https://youtu.be/7xsXwXwp5JE
 
-링크 :
+시연 영상 링크(사진 클릭시 이동) :
 
 [![](http://img.youtube.com/vi/7xsXwXwp5JE/0.jpg)](http://www.youtube.com/watch?v=7xsXwXwp5JE "YOLO")
 
