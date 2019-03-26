@@ -19,7 +19,7 @@ https://youtu.be/7xsXwXwp5JE
 
 링크 :
 
-[![](http://img.youtube.com/vi/7xsXwXwp5JE/2.jpg)](http://www.youtube.com/watch?v=7xsXwXwp5JE "YOLO")
+[![](http://img.youtube.com/vi/7xsXwXwp5JE/0.jpg)](http://www.youtube.com/watch?v=7xsXwXwp5JE "YOLO")
 
 
 
